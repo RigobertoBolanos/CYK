@@ -72,7 +72,7 @@ namespace Tarea2_CYK
             {
                 result = true;
             }
-
+            Console.WriteLine(result);
             return result;
         }
     }

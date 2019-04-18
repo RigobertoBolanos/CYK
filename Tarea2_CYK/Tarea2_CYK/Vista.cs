@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PrototipoMaquinasEquivalentes
+namespace Tarea2_CYK
 {
     public partial class Vista : Form
     {
@@ -92,7 +92,24 @@ namespace PrototipoMaquinasEquivalentes
         
         private void btnRealizarAnalisis_Click(object sender, EventArgs e)
         {
-           
+            List<List<string>> grammar = new List<List<string>>();
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                List<string> variable = new List<string>();
+                List<string> aux = new List<string>();
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    aux.Add(cell.Value + "");
+                }
+                variable.Add(aux.ElementAt(0));
+                foreach (string production in aux.ElementAt(1).Split('|'))
+                {
+                    variable.Add(production);
+                }
+                grammar.Add(variable);
+            }
+            grammar.Remove(grammar.Last());
+            CYK.doCYK(grammar, txtWord.Text);
 
         }
        

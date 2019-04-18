@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace PrototipoMaquinasEquivalentes
+namespace Tarea2_CYK
 {
     partial class Vista
     {
@@ -38,6 +38,8 @@ namespace PrototipoMaquinasEquivalentes
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblEstímulos = new System.Windows.Forms.Label();
+            this.txtWord = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +53,7 @@ namespace PrototipoMaquinasEquivalentes
             // 
             // btnRealizarAnalisis
             // 
-            this.btnRealizarAnalisis.Location = new System.Drawing.Point(46, 299);
+            this.btnRealizarAnalisis.Location = new System.Drawing.Point(46, 372);
             this.btnRealizarAnalisis.Name = "btnRealizarAnalisis";
             this.btnRealizarAnalisis.Size = new System.Drawing.Size(269, 35);
             this.btnRealizarAnalisis.TabIndex = 7;
@@ -62,7 +64,7 @@ namespace PrototipoMaquinasEquivalentes
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 253);
+            this.label5.Location = new System.Drawing.Point(43, 326);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(398, 17);
             this.label5.TabIndex = 12;
@@ -96,17 +98,35 @@ namespace PrototipoMaquinasEquivalentes
             this.lblEstímulos.AutoSize = true;
             this.lblEstímulos.Location = new System.Drawing.Point(43, 31);
             this.lblEstímulos.Name = "lblEstímulos";
-            this.lblEstímulos.Size = new System.Drawing.Size(554, 17);
+            this.lblEstímulos.Size = new System.Drawing.Size(617, 17);
             this.lblEstímulos.TabIndex = 4;
             this.lblEstímulos.Text = "1. Especificar la gramática: Las producciones deben estar separadas por el caract" +
-    "er \'|\'";
+    "er \'|\' (Ej: AS|b)";
             this.lblEstímulos.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtWord
+            // 
+            this.txtWord.Location = new System.Drawing.Point(232, 264);
+            this.txtWord.Name = "txtWord";
+            this.txtWord.Size = new System.Drawing.Size(100, 22);
+            this.txtWord.TabIndex = 13;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(55, 267);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(159, 17);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "2. Especificar la cadena";
             // 
             // Vista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1409, 519);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtWord);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRealizarAnalisis);
             this.Controls.Add(this.label2);
@@ -130,5 +150,7 @@ namespace PrototipoMaquinasEquivalentes
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private Label lblEstímulos;
+        private TextBox txtWord;
+        private Label label1;
     }
 }
