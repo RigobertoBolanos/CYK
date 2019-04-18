@@ -8,6 +8,13 @@ namespace Tarea2_CYK
 {
     class CYK
     {
+
+        /*Metodo doCYK
+         *Parametros: 
+         *grammar: Recibe la gramatica en una lista de lista de String
+         * word: Es la cadena la cual se quiere saber si es generada por la gramatica
+         * El metodo retorna true si la cadena es generada por la gramatica, retorna false en caso contrario
+         */
         public static Boolean doCYK(List<List<String>> grammar, String word)
         {
             Boolean result = false;
@@ -72,8 +79,15 @@ namespace Tarea2_CYK
             {
                 result = true;
             }
-            Console.WriteLine(result);
+
+            Resultado vistaResultado = new Resultado();
+            vistaResultado.Show();
+            vistaResultado.crearMatrizResultado(grammar.Count, matrix, word, result);
+            
+            
             return result;
+
+            
         }
     }
 }

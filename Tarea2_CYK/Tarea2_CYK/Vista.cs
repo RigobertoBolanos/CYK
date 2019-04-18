@@ -89,7 +89,9 @@ namespace Tarea2_CYK
         {
 
         }
-        
+        /*Metodo btnRealizarAnalisis_Click
+         * Prepara la gramatica a partir de los datos ingresados por el usuario en el DataGridView
+         */
         private void btnRealizarAnalisis_Click(object sender, EventArgs e)
         {
             List<List<string>> grammar = new List<List<string>>();
