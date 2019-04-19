@@ -72,7 +72,7 @@ namespace Tarea2_CYK
                             }
                         }
                     }
-                    matrix[i, j] = variables;
+                    matrix[i, j] = variables.Distinct().ToList();
                 }
             }
             if(matrix[1,word.Length].Contains(grammar.ElementAt(0).ElementAt(0)))
