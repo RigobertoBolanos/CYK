@@ -29,3 +29,4 @@ C:\Users\hp\Source\Repos\RigobertoBolanos\CYK\Tarea2_CYK\Tarea2_CYK\obj\Debug\Ta
 C:\Users\hp\Source\Repos\RigobertoBolanos\CYK\Tarea2_CYK\Tarea2_CYK\obj\Debug\Tarea2_CYK.exe
 C:\Users\hp\Source\Repos\RigobertoBolanos\CYK\Tarea2_CYK\Tarea2_CYK\obj\Debug\Tarea2_CYK.pdb
 C:\Users\hp\Source\Repos\RigobertoBolanos\CYK\Tarea2_CYK\Tarea2_CYK\obj\Debug\Tarea2_CYK.Resultado.resources
+C:\Users\Juan Diego\Documents\GitHub\CYK\Tarea2_CYK\Tarea2_CYK\obj\Debug\Tarea2_CYK.Resultado.resources
