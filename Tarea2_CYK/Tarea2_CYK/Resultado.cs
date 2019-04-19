@@ -30,10 +30,10 @@ namespace Tarea2_CYK
          * result: true si la cadena es generada por la gramatica, retorna false en caso contrario
          * El metodo genera la matriz cuadrada del resultado de CYK dónde se puede apreciar de forma visual si la cadena es o no generada por la gramatica
          */
-        public void crearMatrizResultado(int filasColumnas, List<string>[,] matrix, string word, Boolean result)
+        public void crearMatrizResultado(List<string>[,] matrix, string word, Boolean result)
         {
             
-            for(int i = 1; i <= filasColumnas; i++)
+            for(int i = 1; i <= word.Count(); i++)
             {
                 DataGridViewTextBoxColumn cx = new DataGridViewTextBoxColumn();
                 cx.ReadOnly = true;
@@ -41,10 +41,10 @@ namespace Tarea2_CYK
                 dgvResultado.Columns.Add(cx);
             }
 
-            for(int i = 1; i <= filasColumnas; i++)
+            for(int i = 1; i <= word.Count(); i++)
             {
-                string[] row = new string[filasColumnas];
-                for(int j = 1; j <= filasColumnas; j++)
+                string[] row = new string[word.Count()];
+                for(int j = 1; j <= word.Count(); j++)
                 {
                     if(matrix[i, j] == null)
                     {

@@ -11,8 +11,7 @@ namespace Tarea2_CYK
 
         /*Metodo doCYK
          *Parametros: 
-         *grammar: Recibe la gramatica en una lista de lista de String cada lista de strings contiene una variable en su primer posición y 
-         * sus respectivas producciones en las demás
+         *grammar: Recibe la gramatica en una lista de lista de String
          * word: Es la cadena la cual se quiere saber si es generada por la gramatica
          * El metodo retorna true si la cadena es generada por la gramatica, retorna false en caso contrario
          */
@@ -73,7 +72,7 @@ namespace Tarea2_CYK
                             }
                         }
                     }
-                    matrix[i, j] = variables.Distinct().ToList();
+                    matrix[i, j] = variables;
                 }
             }
             if(matrix[1,word.Length].Contains(grammar.ElementAt(0).ElementAt(0)))
@@ -83,7 +82,7 @@ namespace Tarea2_CYK
 
             Resultado vistaResultado = new Resultado();
             vistaResultado.Show();
-            vistaResultado.crearMatrizResultado(grammar.Count, matrix, word, result);
+            vistaResultado.crearMatrizResultado(matrix, word, result);
             
             
             return result;
